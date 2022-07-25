@@ -8,7 +8,7 @@ Projeto para colocar em prática os conceitos abordados na apresentação.
 Com o que foi explicado sobre coroutines ajustar o app fazendo com que o Relógio funcione.
 Importante não travar a Main thread e ter o mesmo resultado que o gif abaixo:
 
-![](/resources/timer.gif)
+<img src="/resources/timer.gif" width="250" height="500"/>
 
 ## Use Case
 ```
