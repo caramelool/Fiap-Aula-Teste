@@ -3,11 +3,11 @@ package lc.com.fiap.aulateste
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import lc.com.fiap.aulateste.impl.NoopTimerPresenterImpl
+import lc.com.fiap.aulateste.impl.TimerPresenterImpl
 
 class MainActivity : AppCompatActivity(), TimerView {
 
-    private val presenter: TimerPresenter = NoopTimerPresenterImpl(this)
+    private val presenter: TimerPresenter = TimerPresenterImpl(this)
 
     private val timeLabel: TextView by lazy { findViewById(R.id.time) }
 

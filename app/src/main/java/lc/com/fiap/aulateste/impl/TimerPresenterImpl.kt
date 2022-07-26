@@ -3,8 +3,8 @@ package lc.com.fiap.aulateste.impl
 import lc.com.fiap.aulateste.TimerPresenter
 import lc.com.fiap.aulateste.TimerView
 
-class NoopTimerPresenterImpl(
-    private val view: TimerView,
+class TimerPresenterImpl(
+    private val view: TimerView
 ) : TimerPresenter {
 
     override fun startTimer() {

@@ -10,24 +10,5 @@ Importante não travar a Main thread e ter o mesmo resultado que o gif abaixo:
 
 <img src="/resources/timer.gif" width="250" height="500"/>
 
-## Use Case
-```
-object GetTimeUseCase {
-   private val timerFormat: SimpleDateFormat by lazy {
-       SimpleDateFormat("HH:mm:ss", Locale.getDefault())
-   }
-
-   suspend operator fun invoke() : String {
-       return withContext(Dispatchers.Default) {
-           val millis = System.currentTimeMillis()
-           timerFormat.format(millis)
-       }
-   }
-}
-```
-
-## Extra
-Adicionar caso de teste.
-
 ## Apache 2.0 License
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
